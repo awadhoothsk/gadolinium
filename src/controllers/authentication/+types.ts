@@ -1,11 +1,11 @@
-import type {User} from '@prisma/client'
+import type { User } from "@prisma/client";
 
-export enum SignUPWithUsernameAndPasswordError {
-    CONFLICTING_USERNAME = 'CONFLICTING_USERNAME',
-    UNKNOWN = 'UNKNOWN'
+export enum SignUpWithUsernameAndPasswordError {
+  CONFLICTING_USERNAME = "CONFLICTING_USERNAME",
+  UNKNOWN = "UNKNOWN",
 }
 
 export type SignUpWithUsernameAndPasswordResult = {
-    user: User
-    token: string
-}
+  token: string;
+  user: User;
+};
