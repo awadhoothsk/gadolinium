@@ -5,10 +5,10 @@ import {
   SignUpWithUsernameAndPasswordError,
   type LogInWithUsernameAndPasswordResult,
   type SignUpWithUsernameAndPasswordResult,
-} from "./authentication-types";
-import { prismaClient } from "../../extras/prisma";
+} from "../authentication-types";
+import { prismaClient } from "../../../extras/prisma";
 import jwt from "jsonwebtoken";
-import { jwtSecretKey } from "../../../environment";
+import { jwtSecretKey } from "../../../../environment";
 
 export const signUpWithUsernameAndPassword = async (parameters: {
   username: string;
